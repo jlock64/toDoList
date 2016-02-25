@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <script type="text/template" id="taskTemplate">
+    <li><input type='checkbox'><%= content %></li>
+  </script>
+  <body>
+    <section class="">
+    <h1>todos</h1>
+      <form>
+        <input type="text" id="new-task" placeholder="enter task">
+        <button type="submit" id="addTask">Submit</button>
+        <ul id="allTasks" class="current">
+        </ul>
+          <ul id="bottom-nav">
+            <li id="items-left">items left</li>
+            <li><button id="all-tasks" type="button">All Tasks</button></li>
+            <li><button id="active" type="button">Active Tasks</button></li>
+            <li><button id="completed "type="button">Completed Tasks</button></li>
+            <li><button id="clear"type="button">Clear Completed</button></li>
+          </ul>
+        </div>
+      </form>
+    </section>
+
+    <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
+    <script src="templates.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
